@@ -1,0 +1,22 @@
+{
+    "name": "shinomontaz/l4-mpdf",
+    "description": "mPDF wrapper for Laravel 4",
+    "keywords": ["laravel","mpdf", "pdf"],
+    "authors": [
+        {
+            "name": "Shinomontaz",
+            "email": "shinomontaz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.x",
+        "mpdf/mpdf": "5.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Shinomontaz\\Mpdf": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
