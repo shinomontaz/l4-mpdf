@@ -28,9 +28,9 @@ class ServiceProvider extends BaseServiceProvider {
 		if($this->app['config']->get('l4-mpdf::config.pdf.enabled')){
 			$this->app['mpdf.pdf'] = $this->app->share(function($app)
 			{
-				$base = $app['config']->get('l4-mpdf::config.pdf.base');
+				$base 	 = $app['config']->get('l4-mpdf::config.pdf.base');
 				$options = $app['config']->get('l4-mpdf::config.pdf.options');
-				$mpdf=new \mPDF('win-1252','A4','','',10,10,40,35,10,5);
+				$mpdf	 = new \Mpdf\Mpdf();
 				$mpdf->SetProtection(array('print'));
 				$mpdf->SetTitle("Acme Trading Co. - Invoice");
 				$mpdf->SetAuthor("Acme Trading Co.");
