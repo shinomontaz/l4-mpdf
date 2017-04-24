@@ -3,7 +3,7 @@
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 //use TFox\MpdfPortBundle\Service\MpdfService as mPDF;
 
-include base_path('vendor/mpdf/mpdf/mpdf.php');
+include base_path('vendor/mpdf/mpdf/src/Mpdf.php');
 
 
 class ServiceProvider extends BaseServiceProvider {
